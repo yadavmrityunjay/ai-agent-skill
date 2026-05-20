@@ -1,0 +1,7 @@
+interface:
+  display_name: "Jira Ticket Report"
+  short_description: "Fetch Jira tickets and create reports"
+  brand_color: "#0052CC"
+  default_prompt: "Use $jira-ticket-report to fetch Jira tickets and create a detailed report."
+policy:
+  allow_implicit_invocation: true
