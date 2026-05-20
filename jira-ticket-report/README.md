@@ -44,8 +44,8 @@ Use this skill by asking Codex to fetch or summarize Jira tickets. The agent rea
 Example prompts:
 
 - `[$jira-ticket-report] Fetch ABC-123 and ABC-456`
-- `[$jira-ticket-report] Fetch all CDSNET tickets assigned to me`
-- `[$jira-ticket-report] Fetch all CDSNET tickets assigned to me in the last year based on assignment or completion date`
+- `[$jira-ticket-report] Fetch all PROJECT tickets assigned to me`
+- `[$jira-ticket-report] Fetch all PROJECT tickets assigned to me in the last year based on assignment or completion date`
 - `[$jira-ticket-report] Run this JQL: project = ABC AND statusCategory != Done ORDER BY updated DESC`
 - `[$jira-ticket-report] Fetch unassigned tickets in project ABC`
 - `[$jira-ticket-report] Summarize ABC-123 with recent comments`
@@ -111,7 +111,7 @@ Each report includes:
 Tickets currently assigned to you and assigned or completed in the last year:
 
 ```jql
-project = CDSNET
+project = PROJECT
 AND assignee = currentUser()
 AND (
   assignee changed TO currentUser() AFTER "2025-05-15"
@@ -123,7 +123,7 @@ ORDER BY updated DESC
 Tickets created in the last year:
 
 ```jql
-project = CDSNET
+project = PROJECT
 AND assignee = currentUser()
 AND created >= "2025-05-15"
 ORDER BY updated DESC
