@@ -1,6 +1,9 @@
 ---
 name: jira-ticket-report
 description: Fetch Jira tickets using $HOME/jira.env by default and create detailed Markdown reports plus JSON data. Use when asked to collect Jira tickets, summarize Jira issues, report on Jira tickets, filter tickets by assignee or unassigned status, run Jira JQL, or analyze ticket status/history/comments.
+metadata:
+  author: "Mrityunjay Yadav <mrityu.yadav@yahoo.in>"
+  version: 1.0.0
 ---
 
 # Jira Ticket Report
